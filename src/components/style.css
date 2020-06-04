@@ -1,0 +1,131 @@
+.display-flex,
+.display-flex-center {
+  display: flex;
+  display: -webkit-flex;
+}
+
+p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #777;
+}
+
+h1 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: #222;
+  font-family: "Montserrat";
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 700;
+  font-family: "monospace";
+  background-image: url("imag/img.jpg");
+  background-position: center center;
+  padding: 115px 0;
+}
+
+#container {
+  width: 660px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#signupfields {
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 50px 85px;
+}
+
+#formfields {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#forminput {
+  width: 100%;
+  border-radius: 5px;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+#forminput::-webkit-input-placeholder {
+  color: #999;
+}
+
+#button {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 48%;
+}
+
+#button:hover {
+  background-color: #3e8e41;
+}
+
+#logout {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#logout:hover {
+  background-color: yellowgreen;
+}
+
+#Error {
+  padding: 10px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
