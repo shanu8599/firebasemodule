@@ -1,5 +1,4 @@
 import React from "react";
-
 import firebase from "./firebase";
 
 class Home extends React.Component {
@@ -10,10 +9,13 @@ class Home extends React.Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <h1>You Are Logged In</h1>
-        <button id="logout" onClick={this.logout}>
-          LOGOUT
-        </button>
+        <h2>You are Successfully logged in with below Email-Id:</h2>
+        <h3>{this.props && this.props.user && this.props.user.email}</h3>
+        <div>
+          <button id="logout" onClick={this.logout}>
+            LOGOUT
+          </button>
+        </div>
       </div>
     );
   }

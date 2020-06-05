@@ -48,41 +48,41 @@ class Login extends Component {
       <div id="Error"> {this.state.fireErrors} </div>
     ) : null;
     return (
-        <div id="container">
-          <div id="signupfields">
-            <form>
-              <h2>Enter User Account Details</h2>
-              <div id="formfields">
-                {error}
-                <label>Email-Id</label>
-                <input
-                  type="email"
-                  id="forminput"
-                  name="email"
-                  placeholder="Your Email"
-                  onChange={this.handleChange}
-                  value={this.state.email}
-                />
-              </div>
-              <label>Password</label>
+      <div id="container">
+        <div id="signupfields">
+          <form>
+            <h2>Enter User Account Details</h2>
+            <div id="formfields">
+              {error}
+              <label>Email-Id</label>
               <input
-                type="password"
+                type="email"
                 id="forminput"
-                name="password"
-                placeholder="Password"
+                name="email"
+                placeholder="Your Email"
                 onChange={this.handleChange}
-                value={this.state.password}
+                value={this.state.email}
               />
-              <button id="button" onClick={this.login}>
-                Login
-              </button>
-              &nbsp;
-              <button id="button" onClick={this.signup}>
-                Register
-              </button>
-            </form>
-          </div>
+            </div>
+            <label>Password</label>
+            <input
+              type="password"
+              id="forminput"
+              name="password"
+              placeholder="Password"
+              onChange={this.handleChange}
+              value={this.state.password}
+            />
+            <button id="button" onClick={this.login}>
+              Login
+            </button>
+            &nbsp;
+            <button id="button" onClick={this.signup}>
+              Register
+            </button>
+          </form>
         </div>
+      </div>
     );
   }
 }

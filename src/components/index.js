@@ -1,2 +1,3 @@
-import Loginregister from "./Loginregister";
-export default Loginregister;
+import Route from "./UserLogin/Route";
+
+export default Route;
